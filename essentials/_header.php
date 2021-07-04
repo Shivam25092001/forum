@@ -4,7 +4,7 @@ include 'essentials/_signup.php';
 include 'essentials/_dbconnect.php';
 if(!isset($_SESSION['loggedin']))
 {
-    echo'<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    echo'<nav class="navbar navbar-expand-lg navbar-dark nav-override">
 <div class="container-fluid">
 <a class="navbar-brand" href="index.php">MyForum</a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,8 +40,8 @@ echo'</ul>
 <button class="btn btn-outline-success" type="submit">Search</button>
 </form>
 <form class="d-flex">
-<button class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#login" type="button">Login</button>
-<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signup" type="button">SignUp</button>
+<button class="btn button mx-2" data-bs-toggle="modal" data-bs-target="#login" type="button">Login</button>
+<button class="btn button" data-bs-toggle="modal" data-bs-target="#signup" type="button">SignUp</button>
 </form>
 </div>
 </div>
@@ -67,7 +67,7 @@ else
 <a class="nav-link" href="contact.php">Contact</a>
 </li>
 <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<a class="nav-link dropdown-toggle glassdiv" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 Categories
 </a>
 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">';

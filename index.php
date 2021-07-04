@@ -89,6 +89,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="a.css">
 
     <title>MyForum</title>
 </head>
@@ -133,7 +134,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
         }
     }
     ?>
-    <div id="carouselExampleIndicators" mt-0 class="carousel slide" data-bs-ride="carousel">
+    <!-- <div id="carouselExampleIndicators" mt-0 class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -167,8 +168,8 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     </div>
     <div class="container">
         <p class="text-white bg-dark container my-3 rounded text-center">CATEGORIES</p>
-    </div>
-    <div class="container d-flex justify-content-center flex-wrap" style="margin-bottom:50px">
+    </div> -->
+    <div class="catalog">
         <?php
           $sql="SELECT * FROM `categories`";
           $result=mysqli_query($connect,$sql);
@@ -176,25 +177,36 @@ if($_SERVER['REQUEST_METHOD']=='POST')
           {
             $title=$row['TITLE'];
             $description=$row['DESCRIPTION'];
-            echo '<div class="row ">
-            <div class="col-4 my-1 mx-5">
-                <div class="card" style="width: 18rem;">
-                    <img src="cardImages/'.$title.'.png"
-                        class="card-img-top"  height=250px>
-                    <div class="card-body">
-                        <h5 class="card-title">'.$title.'</h5>
-                        <p class="card-text">'.substr($description,0,150).'...</p>
-                        <a href="threadlist.php?ID='.$row['ID'].'" class="btn btn-primary">View thread</a>
-                    </div>
-                </div>
-            </div>
-             </div>';
+            echo '  <div class="main">
+            <a href="threadlist.php?ID='.$row['ID'].'" style="text-decoration: none; color: white;">
+            <div class="glassdiv">
+              <div class="card-body">
+                <img src="cardImages/'.$title.'.png" height=100px>
+                <h5 class="card-title">'.$title.'</h5>
+                <button class="thread-button">View thread</button>
+              </div>
+            </div></a>
+          </div>';
           }
         ?>
     </div>
-    <?php
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+<!--     <?php
     include 'essentials/_footer.php';
-    ?>
+    ?> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
