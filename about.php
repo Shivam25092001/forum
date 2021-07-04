@@ -89,7 +89,10 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="a.css" />
+        <link rel="stylesheet" href="cssfiles/css_about_contact.css" />
+    <!-- icon link -->
+    <link rel="icon" href="images/forumlogo.png" type="image/icon type">
     <title>MyForum</title>
 </head>
 
@@ -134,20 +137,24 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     }
     ?>
     <div class="container">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container d-flex justify-content-center align-item-center my-4" style="flex-direction:column;">
-                <h1 class="display-4">About Us</h1>
-                <p class="lead" style="align-self:center;">MyForum is an online forum where people from the coding
+        <div class="jumbotron jumbotron-fluid glassdiv">
+            <div class="container d-flex justify-content-center align-item-center my-4 DIV_content card-body proffok" style="flex-direction:column;">
+                <h1 class="display-4 heading_page">About Us</h1>
+                <hr class="hr_style">
+                <br>
+                <br>
+                <br>
+                <p class="lead pika" style="align-self:center;">        MyForum is an online forum where people from the coding
                     community can gather togather to share their knowledge and experince related to tech, guide
                     freshmens and help them grow.Feel free to ask your doubts related to
                     programming,softwares,technology,roadmaps,etc.</p>
-                <p class="lead" style="align-self:center;">This website may be viewed by friends and families, or school
+                <p class="lead pika" style="align-self:center;">        This website may be viewed by friends and families, or school
                     aged children for school project research. We require members to respect the
                     rights and feelings of the families and friends of the coding community, by placing thought into
                     comments before
                     they are posted. We do understand the issues raised on this site may lead to “heated debate”, but
-                    require users to maintain a family friendly environment on the forums.
-
+                    require users to maintain a family friendly environment on the forums.</p>
+                <p class="lead pika" style="align-self:center;">
                     Discussion content reflects the views of individual people only. This website and the host bears no
                     responsibility for the accuracy of forum member’s comments and will bear no
                     responsibility or legal liability for discussion postings. We reserve the right to remove posts
@@ -164,6 +171,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     <!-- <?php
     include 'essentials/_footer.php';
     ?> -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>

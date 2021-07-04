@@ -89,7 +89,11 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="a.css" />
+        <link rel="stylesheet" href="cssfiles/css_about_contact.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon link -->
+    <link rel="icon" href="images/forumlogo.png" type="image/icon type">
     <title>MyForum</title>
 </head>
 
@@ -133,9 +137,15 @@ if($_SERVER['REQUEST_METHOD']=='POST')
         }
     }
     ?>
-    <div class="container" style="margin-top:20vh;padding:10px;">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello <?php 
+    <div class="container DIV_content" style="margin-top:20vh;padding:10px;">
+        <div class="jumbotron proffok">
+            <div class="button squirtle" onclick="myFunction()">Direction</div>
+            <!-- <div class="card-body"> -->
+        <br>
+        <br>
+
+<a name="chiko"></a>
+            <h1 class="display-4 heading_page">Hello <?php 
                if(isset($_SESSION['loggedin']))
                {
                    echo $_SESSION['username'];
@@ -145,31 +155,92 @@ if($_SERVER['REQUEST_METHOD']=='POST')
                    echo "User";
                }
             ?></h1>
+            <hr class="hr_style">
+            <br>
+            <br>
+<a name="treeko"></a>
             <p class="lead">
                 You can contact the web host through instagram.
-            <div class="media">
+            <!-- <div class="media">
                 <img src="images/instagram.png" class="mr-3" height="50px" width="50px">
                 <div class="media-body">
                     <h5 class="mt-0"><a href="https://www.instagram.com/agd_014/" class="text-dark"
-                            style="text-decoration:none;">agd_014</a></h5>
+                            style="text-decoration:none;">forumindia_014</a></h5>
                 </div>
-            </div>
-            </p>
-            <hr class="my-4">
-            <div class="media">
+            </div> -->
+            <!-- </p>
+            <hr class="my-4"> -->
+            <!-- <div class="media">
                 <p class="lead" style="font-size:20px;">Or you can send him a mail.</p>
                 <img src="images/gmail.png" class="mr-3" height="40px" width="40px">
                 <div class="media-body">
                     <h5 class="mt-0"><a href="mailto:arkoghosh@gmail.com" class="text-dark"
-                            style="text-decoration:none;">arkoghosh@gmail.com</a></h5>
+                            style="text-decoration:none;">.com<forumindia@gmail/a></h5>
                 </div>
-            </div>
+            </div> -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <div class="pikachu">
+                <img src="images/instagram.png" alt="Avatar" class="image">
+                <div class="overlay">
+                <a href="#" class="icon" title="forum_India_014">
+                  <i class="fa fa-user"></i>
+                </a>
+                </div>
+              </div>
+
+              <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+<a name="turtwig"></a>
+            </p>
+            <hr class="my-4">
+            <p class="lead" style="font-size:20px;">Or you can send him a mail.</p>
+            <div class="pikachu">
+                <img src="images/gmail.png" alt="Avatar" class="image">
+                <div class="overlay">
+                <a href="#" class="icon" title="forumindia.forums@gmail.com">
+                  <i class="fa fa-user"></i>
+                </a>
+                </div>
+              </div>
+              <!-- </div> -->
+              <a name="marshtomp"></a>
+            </p>
+            <hr class="my-4">
+            <p class="lead" style="font-size:20px;">Or you can connect on Facebook.</p>
+            <div class="pikachu">
+                <img src="images/facebook.png" alt="Avatar" class="image">
+                <div class="overlay">
+                <a href="#" class="icon" title="Forum India Official">
+                  <i class="fa fa-user"></i>
+                </a>
+                </div>
+              </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
     </div>
-    <?php
-    include 'essentials/_footer.php';
-    ?>
+
+    <div id="myDIV" class="glass-panel">
+        <!-- <p style="text-align: right; padding-right: 10px;" onclick="func()">close</p> -->
+        <a href="#" class="close" onclick="func()"></a>
+        <h3>Direction</h3>
+        <br>
+        <br>
+        <ul id="aama">
+        <li><a href="#chiko" style="color: white;">General</a></li>
+        <li><a href="#treeko" style="color: white;">Instagram</a></li>
+        <li><a href="#turtwig" style="color: white;">E-mail</a></li>
+        <li><a href="#marshtomp" style="color: white;">Facebook</a></li>
+
+        <!-- <li><a href="#" style="color: white;">Pixart of Studio and Gallery</a></li>
+        <li><a href="#" style="color: white;">Our Projects</a></li> -->
+        
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>

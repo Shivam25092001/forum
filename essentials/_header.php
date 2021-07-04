@@ -32,6 +32,9 @@ if(!isset($_SESSION['loggedin']))
 <li class="nav-item">
 <a class="nav-link" href="contact.php">Contact</a>
 </li>
+<li class="nav-item">
+<a class="nav-link" href="event.xml">Events</a>
+</li>
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 Categories
@@ -60,9 +63,20 @@ echo'</ul>
 }
 else
 {
-    echo'<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    echo'
+          <!-- top branding bar -->
+  <div class="Branding">
+    <a href="index.php" style="text-decoration: none;">
+      <h1>
+        <img src="images/myForum.png" height=30px style="margin: 0%; padding: 0%;">
+        &nbsp MyForum
+      </h1>
+    </a>
+  </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark nav-override">
 <div class="container-fluid">
-<a class="navbar-brand" href="index.php">MyForum</a>
+<!-- <a class="navbar-brand" href="index.php">MyForum</a> -->
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -76,6 +90,9 @@ else
 </li>
 <li class="nav-item">
 <a class="nav-link" href="contact.php">Contact</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="event.xml">Events</a>
 </li>
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -96,7 +113,7 @@ echo'</ul>
 <button class="btn btn-outline-success" type="submit">Search</button>
 </form> -->
 <form class="d-flex">
-<button class="btn btn-success"  type="button" style="margin-left:2px;"><a href="logout.php" style="text-decoration:none;" class="text-light " >Logout</a></button>
+<button class="btn button"  type="button" style="margin-left:2px;"><a href="logout.php" style="text-decoration:none;" class="text-light " >Logout</a></button>
 </form>
 </div>
 </div>

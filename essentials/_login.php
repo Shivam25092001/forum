@@ -3,7 +3,7 @@
         <div class="modal-content glass-panel">
             <div class="modal-header glass-panel" style="border-radius: 15px">
                 <h5 class="modal-title" id="loginLabel">LOGIN</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body glass-panel" style="border-radius: 0px 0px 15px 15px;">
                 <form action="index.php" method="POST">

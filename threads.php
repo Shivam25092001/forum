@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="a.css">
 
+    <!-- icon link -->
+    <link rel="icon" href="images/forumlogo.png" type="image/icon type">
     <title>MyForum</title>
 </head>
 
@@ -39,7 +42,7 @@
    <div class="jumbotron">
        <h3 class="display-4">'.$row['queryTitle'].'</h3>
        <p class="lead">'.$row['queryDescription'].'</p>
-       <p class="text-primary"><strong>Posted By:<em> '.$row2['USERNAME'].'<em> on <em>'.$row2['DATE'].'</em></strong></p>
+       <p style="color: black;"><strong>Posted By:<em> '.$row2['USERNAME'].'<em> on <em>'.$row2['DATE'].'</em></strong></p>
        <hr class="my-4">
        <div class="alert alert-warning" role="alert">No Spam / Advertising / Self-promote in the forums is allowed.
        Do not post copyright-infringing material.
@@ -116,7 +119,7 @@
           </div></div>');
         }
     }
-    include 'essentials/_footer.php';
+
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
