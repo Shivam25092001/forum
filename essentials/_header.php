@@ -4,9 +4,20 @@ include 'essentials/_signup.php';
 include 'essentials/_dbconnect.php';
 if(!isset($_SESSION['loggedin']))
 {
-    echo'<nav class="navbar navbar-expand-lg navbar-dark nav-override">
+    echo'
+      <!-- top branding bar -->
+  <div class="Branding">
+    <a href="index.php" style="text-decoration: none;">
+      <h1>
+        <img src="images/myForum.png" height=30px style="margin: 0%; padding: 0%;">
+        &nbsp MyForum
+      </h1>
+    </a>
+  </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark nav-override">
 <div class="container-fluid">
-<a class="navbar-brand" href="index.php">MyForum</a>
+<!-- <a class="navbar-brand" href="index.php">MyForum</a> -->
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -25,7 +36,7 @@ if(!isset($_SESSION['loggedin']))
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 Categories
 </a>
-<ul class="dropdown-menu" aria-labelledby="navbarDropdown">';
+<ul class="dropdown-menu glass-panel" aria-labelledby="navbarDropdown">';
 $sql="SELECT * FROM `categories`";
 $result=mysqli_query($connect,$sql);
 while($row=mysqli_fetch_assoc($result))
@@ -35,10 +46,10 @@ while($row=mysqli_fetch_assoc($result))
 echo'</ul>
 </li>
 </ul>
-<form class="d-flex" action="search.php" method="GET">
+<!-- <form class="d-flex" action="search.php" method="GET">
 <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
 <button class="btn btn-outline-success" type="submit">Search</button>
-</form>
+</form> -->
 <form class="d-flex">
 <button class="btn button mx-2" data-bs-toggle="modal" data-bs-target="#login" type="button">Login</button>
 <button class="btn button" data-bs-toggle="modal" data-bs-target="#signup" type="button">SignUp</button>
@@ -67,10 +78,10 @@ else
 <a class="nav-link" href="contact.php">Contact</a>
 </li>
 <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle glassdiv" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 Categories
 </a>
-<ul class="dropdown-menu" aria-labelledby="navbarDropdown">';
+<ul class="dropdown-menu glass-panel" aria-labelledby="navbarDropdown">';
 $sql="SELECT * FROM `categories`";
 $result=mysqli_query($connect,$sql);
 while($row=mysqli_fetch_assoc($result))
@@ -80,10 +91,10 @@ while($row=mysqli_fetch_assoc($result))
 echo'</ul>
 </li>
 </ul>
-<form class="d-flex"  action="search.php" method="GET">
+<!-- <form class="d-flex"  action="search.php" method="GET">
 <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search">
 <button class="btn btn-outline-success" type="submit">Search</button>
-</form>
+</form> -->
 <form class="d-flex">
 <button class="btn btn-success"  type="button" style="margin-left:2px;"><a href="logout.php" style="text-decoration:none;" class="text-light " >Logout</a></button>
 </form>

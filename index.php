@@ -181,7 +181,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
             <a href="threadlist.php?ID='.$row['ID'].'" style="text-decoration: none; color: white;">
             <div class="glassdiv">
               <div class="card-body">
-                <img src="cardImages/'.$title.'.png" height=100px>
+                <img src="cardImages/'.$title.'.png" height=100px style="border-radius: 5px;">
                 <h5 class="card-title">'.$title.'</h5>
                 <button class="thread-button">View thread</button>
               </div>

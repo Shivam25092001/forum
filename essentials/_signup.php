@@ -1,11 +1,11 @@
 <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
+    <div class="modal-dialog glass-panel">
+        <div class="modal-content glass-panel">
+            <div class="modal-header glass-panel">
                 <h5 class="modal-title" id="signupLabel">SIGNUP</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body glass-panel" style="border-radius: 0px 0px 15px 15px;">
                 <form action="index.php" method="POST">
                     <div class="mb-3">
                         <label for="username" class="form-label" >Username</label>

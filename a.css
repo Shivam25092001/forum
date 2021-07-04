@@ -6,6 +6,7 @@ body {
   background: linear-gradient(to right, #606c88, #3f4c6b);
   width: 100%;
   font-family: 'Raleway', sans-serif;
+  color: white;
 }
 
 
@@ -132,11 +133,11 @@ body {
 .Branding {
   background-color: #282c38;
   overflow: hidden;
-  padding: 10px;
+  padding: 5px;
 }
 
 .Branding h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 50;
   color: snow;
@@ -150,7 +151,7 @@ body {
   top: 0%;
   overflow: hidden;
   margin: 0%;
-  font-family: 'Montserrat';
+  font-family: 'Raleway', sans-serif;
   list-style: none;
   z-index: 50;
 }
@@ -200,17 +201,18 @@ body {
   margin-left: 0px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .main {
   margin-left: 50px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .glassdiv {
-  margin: 25px;
+  margin-top: 25px;
   background: inherit;
   min-width: 396px;
   height: 250px;
@@ -220,9 +222,8 @@ body {
   font-family: 'Raleway', sans-serif;
   z-index: -1;
   box-shadow: 5px 5px 10px rgba(57, 64, 87, 0.911);
-  border-color: rgba(57, 64, 87, 0.911);
+  border: 2px rgba(57, 64, 87, 0.911);
 }
-
 .glassdiv:before {
   content: '';
   width: 440px;
@@ -233,9 +234,45 @@ body {
   right: 0;
   top: -25px;
   bottom: 0;
-  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.199);
-  filter: blur(15px);
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
+  filter: blur(50px);
 }
+.glass-panel{
+  background: inherit;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 5px 5px 10px rgba(57, 64, 87, 0.911);
+  border: 2px rgba(57, 64, 87, 0.911);
+}
+.glass-panel:before{
+  content: '';
+  width: 550px;
+  height: 550px;
+  background: inherit;
+  position: absolute;
+  left: -25px;
+  right: 0;
+  top: -25px;
+  bottom: 0;
+  box-shadow: inset 0 0 0 300px rgba(168, 172, 190 , 75%);
+  z-index: -1;
+  filter: blur(15px); 
+}
+.glass-panel li a{
+  color: rgb(243, 243, 243);
+  font-weight: bolder;
+  opacity: 1;
+}
+.glass-panel li a:hover{
+  color: white;
+  font-weight: bolder;
+  opacity: 1;
+  background-color: rgba(57, 64, 87, 0.911);
+}
+
+
 
 .card-body {
   display: flex;
@@ -270,7 +307,10 @@ body {
 
 .button{
   background-color: rgb(71, 78, 100);
-  box-shadow: 5px 5px 10px rgba(99, 112, 150, 0.911);
+  box-shadow: 5px 5px 10px rgb(36 ,45 ,70 , 91%);
   border: none;
   color: white;
+}
+.btn-check:focus+.btn, .btn:focus{
+  box-shadow: none;
 }
